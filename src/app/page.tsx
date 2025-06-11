@@ -87,7 +87,7 @@ export default function HomePage() {
           <div className="mt-16 animate-pulse">
             <Image
               src="https://placehold.co/600x400.png"
-              alt="AI brain and lightbulb fusion illustration"
+ alt="An artistic rendering of a stylized brain connected to a glowing lightbulb, symbolizing AI-driven ideas and innovation. The image has a futuristic and slightly abstract feel."
               width={600}
               height={400}
               className="mx-auto rounded-lg shadow-2xl opacity-70"
