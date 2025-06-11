@@ -84,13 +84,13 @@ export default function HomePage() {
             <Link href="/validate">Try IdeaScan Now</Link>
           </GradientButton>
           <div className="mt-16 animate-pulse">
-            <Image 
+            <Image
               src="https://placehold.co/600x400.png"
               alt="AI brain and lightbulb fusion illustration"
               width={600}
               height={400}
               className="mx-auto rounded-lg shadow-2xl opacity-70"
-              data-ai-hint="AI brain"
+              data-ai-hint="idea lightbulb"
               priority
             />
           </div>
@@ -140,7 +140,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Call to Action Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
@@ -172,11 +172,11 @@ export default function HomePage() {
                   </div>
                   <p className="italic text-muted-foreground font-poppins mb-6">"{testimonial.quote}"</p>
                   <div className="flex items-center">
-                    <Image 
+                    <Image
                       src={testimonial.avatar}
-                      alt={testimonial.name} 
-                      width={40} 
-                      height={40} 
+                      alt={testimonial.name}
+                      width={40}
+                      height={40}
                       className="rounded-full mr-3"
                       data-ai-hint="person avatar"
                     />
