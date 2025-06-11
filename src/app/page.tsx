@@ -7,17 +7,17 @@ import { TrendingUp, Users, DollarSign, FileText, BrainCircuit, BarChartHorizont
 
 const features = [
   {
-    icon: <TrendingUp className="h-10 w-10 text-hot-pink mb-4" />,
+    icon: <TrendingUp className="h-10 w-10 text-accent mb-4" />,
     title: 'Market Demand Detector',
     description: 'Gauge potential user interest and market size for your idea.',
   },
   {
-    icon: <Users className="h-10 w-10 text-hot-pink mb-4" />,
+    icon: <Users className="h-10 w-10 text-accent mb-4" />,
     title: 'Competitor Scanner',
     description: 'Identify existing players and analyze their strengths and weaknesses.',
   },
   {
-    icon: <DollarSign className="h-10 w-10 text-hot-pink mb-4" />,
+    icon: <DollarSign className="h-10 w-10 text-accent mb-4" />,
     title: 'Investor Trends Score',
     description: 'Understand if your idea aligns with current investor interests and funding patterns.',
   },
@@ -25,17 +25,17 @@ const features = [
 
 const workflowSteps = [
   {
-    icon: <FileText className="h-12 w-12 text-hot-pink mb-4" />,
+    icon: <FileText className="h-12 w-12 text-accent mb-4" />,
     title: '1. Input Your Idea',
     description: 'Clearly describe your startup concept, target audience, and problem you solve.',
   },
   {
-    icon: <BrainCircuit className="h-12 w-12 text-hot-pink mb-4" />,
+    icon: <BrainCircuit className="h-12 w-12 text-accent mb-4" />,
     title: '2. AI Analysis',
     description: 'Our Gemini-powered AI meticulously analyzes your idea against market data and trends.',
   },
   {
-    icon: <BarChartHorizontalBig className="h-12 w-12 text-hot-pink mb-4" />,
+    icon: <BarChartHorizontalBig className="h-12 w-12 text-accent mb-4" />,
     title: '3. Instant Validation Report',
     description: 'Receive a comprehensive report with scores, insights, and actionable suggestions.',
   },
@@ -106,7 +106,7 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center p-6 rounded-2xl hover-glow bg-card shadow-lg border-transparent hover:border-hot-pink/50">
+              <Card key={index} className="text-center p-6 rounded-2xl hover-glow bg-card shadow-lg border-transparent hover:border-accent/50">
                 <CardHeader className="items-center">
                   {feature.icon}
                   <CardTitle className="text-2xl font-orbitron text-primary">{feature.title}</CardTitle>

@@ -62,7 +62,7 @@ export function IdeaForm() {
             {...register("ideaDescription")}
             placeholder="Describe your idea like you're pitching a friend... What problem does it solve? Who is it for? What's unique?"
             rows={8}
-            className="text-base border-2 focus:border-hot-pink focus:ring-hot-pink"
+            className="text-base border-2 focus-visible:border-accent focus-visible:ring-accent"
             aria-invalid={errors.ideaDescription ? "true" : "false"}
           />
           {errors.ideaDescription && (

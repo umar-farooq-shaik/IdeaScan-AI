@@ -42,7 +42,7 @@ export default function AboutPage() {
                 <p className="font-poppins text-muted-foreground mb-4">
                   Our mission is to democratize startup validation. By leveraging the power of advanced AI like Google's Gemini, we aim to help creators refine their concepts, understand market dynamics, and make more informed decisions, ultimately increasing their chances of success.
                 </p>
-                <div className="mt-6 flex items-center text-hot-pink font-semibold font-poppins">
+                <div className="mt-6 flex items-center text-accent font-semibold font-poppins">
                   <CheckCircle className="h-6 w-6 mr-2"/>
                   <span>Empowering Innovators, One Idea at a Time.</span>
                 </div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-orbitron font-bold text-primary mb-8 text-center">Privacy & Ethical AI</h2>
           <div className="max-w-3xl mx-auto p-8 bg-card rounded-2xl shadow-lg border-transparent">
             <div className="flex items-center mb-4">
-              <ShieldCheck className="h-10 w-10 text-hot-pink mr-4" />
+              <ShieldCheck className="h-10 w-10 text-accent mr-4" />
               <h3 className="text-2xl font-orbitron font-semibold text-primary">Our Commitment</h3>
             </div>
             <p className="font-poppins text-muted-foreground mb-4">
@@ -96,7 +96,7 @@ export default function AboutPage() {
         
         <section className="text-center mb-16">
            <div className="inline-flex items-center bg-primary text-primary-foreground px-6 py-3 rounded-full shadow-lg font-poppins">
-              <Heart className="h-6 w-6 mr-2 text-hot-pink fill-hot-pink" />
+              <Heart className="h-6 w-6 mr-2 text-accent fill-accent" />
               <span>Built with by open-source enthusiasts & AI passionates</span>
            </div>
         </section>
@@ -106,9 +106,9 @@ export default function AboutPage() {
           <p className="font-poppins text-muted-foreground mb-8 max-w-xl mx-auto">
             Have questions, feedback, or partnership inquiries? We'd love to hear from you!
           </p>
-          <Button asChild variant="outline" size="lg" className="border-hot-pink text-hot-pink hover:bg-hot-pink hover:text-white transition-colors duration-300 group">
+          <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-colors duration-300 group">
             <a href="mailto:contact@ideascan.ai" className="font-poppins">
-              <Mail className="h-5 w-5 mr-2 group-hover:text-white transition-colors duration-300" />
+              <Mail className="h-5 w-5 mr-2 group-hover:text-accent-foreground transition-colors duration-300" />
               Email Us: contact@ideascan.ai
             </a>
           </Button>
