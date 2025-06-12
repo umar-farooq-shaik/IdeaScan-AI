@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96.5%; /* #F6F6F6 Light Gray */
+    --foreground: 237 100% 14.1%; /* #060047 Midnight Blue */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 237 100% 14.1%; /* #060047 Midnight Blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 237 100% 14.1%; /* #060047 Midnight Blue */
+
+    --primary: 237 100% 14.1%; /* #060047 Midnight Blue */
+    --primary-foreground: 0 0% 96.5%; /* #F6F6F6 Light Gray */
+
+    --secondary: 220 14% 90%; /* #E5E7EB Tailwind gray-200 */
+    --secondary-foreground: 237 100% 14.1%; /* #060047 Midnight Blue */
+
+    --muted: 220 13% 82%; /* #D1D5DB Tailwind gray-300 */
+    --muted-foreground: 237 20% 40%; /* Muted Midnight Blue */
+
+    --accent: 329 100% 35.1%; /* #B3005E Hot Pink */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 82%; /* #D1D5DB Tailwind gray-300 */
+    --input: 220 13% 82%; /* #D1D5DB Tailwind gray-300 */
+    --ring: 335 100% 46.1%; /* #E90064 Neon Pink */
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 210 90% 50%; /* Blue */
+    --chart-2: 160 90% 45%; /* Green */
+    --chart-3: 30 90% 55%;  /* Orange */
+    --chart-4: 280 90% 60%; /* Purple */
+    --chart-5: 340 90% 55%; /* Pink */
+  }
+
+  .dark {
+    /* Define dark theme colors if needed, for now matching light or providing a basic dark variant */
+    --background: 237 100% 14.1%; /* Midnight Blue */
+    --foreground: 0 0% 96.5%; /* Light Gray */
+
+    --card: 237 80% 18.1%; /* Darker shade of Midnight Blue */
+    --card-foreground: 0 0% 96.5%; /* Light Gray */
+
+    --popover: 237 80% 18.1%;
+    --popover-foreground: 0 0% 96.5%;
+
+    --primary: 0 0% 96.5%; /* Light Gray */
+    --primary-foreground: 237 100% 14.1%; /* Midnight Blue */
+
+    --secondary: 237 60% 22.1%; /* Lighter shade of Midnight Blue for secondary elements */
+    --secondary-foreground: 0 0% 96.5%; /* Light Gray */
+
+    --muted: 237 50% 26.1%;
+    --muted-foreground: 0 0% 60%; /* Lighter muted text */
+
+    --accent: 329 100% 45.1%; /* Hot Pink (slightly adjusted for dark if needed) */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 237 40% 30.1%; /* Darker border */
+    --input: 237 40% 30.1%;
+    --ring: 335 100% 56.1%; /* Neon Pink (slightly adjusted for dark if needed) */
+    
+    --chart-1: 210 90% 60%;
+    --chart-2: 160 90% 55%;
+    --chart-3: 30 90% 65%;
+    --chart-4: 280 90% 70%;
+    --chart-5: 340 90% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.neon-shadow {
+  box-shadow: 0 0 5px theme('colors.pink.500'), 0 0 10px theme('colors.pink.500/70'), 0 0 15px theme('colors.pink.500/50');
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 15px 2px hsl(var(--accent) / 0.5);
+  transform: translateY(-4px);
+}
+
+.bouncing-cta {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
