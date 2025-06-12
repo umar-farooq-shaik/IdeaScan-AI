@@ -97,6 +97,7 @@ export default function AboutPage() {
         <section className="text-center mb-16">
            <div className="inline-flex items-center bg-primary text-primary-foreground px-6 py-3 rounded-full shadow-lg font-poppins">
               <Heart className="h-6 w-6 mr-2 text-accent fill-accent" />
+
               <span>Built by Umar Farooq</span>
            </div>
         </section>

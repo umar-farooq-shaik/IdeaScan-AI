@@ -93,8 +93,6 @@ export default function HomePage() {
   className="mx-auto rounded-lg"
   priority
 />
-
-
           </div>
         </div>
       </section>
